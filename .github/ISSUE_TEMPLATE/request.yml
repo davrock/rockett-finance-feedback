@@ -1,0 +1,8 @@
+name: Ask for a feature
+description: Something the app should do.
+labels: [request]
+body:
+  - type: textarea
+    id: what
+    attributes: { label: What would you like it to do, description: What you are trying to get done, and how you do it today. }
+    validations: { required: true }

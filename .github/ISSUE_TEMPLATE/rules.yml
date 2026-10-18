@@ -1,0 +1,12 @@
+name: Report a rules error
+description: A tax, PRSI, USC, pension or welfare figure does not match the published rules.
+labels: [rules]
+body:
+  - type: input
+    id: figure
+    attributes: { label: Which figure, placeholder: "e.g. USC band 2 ceiling for 2026" }
+    validations: { required: true }
+  - type: textarea
+    id: should
+    attributes: { label: What it should be, and the source, description: Link the Revenue, Citizens Information or Finance Act page. }
+    validations: { required: true }

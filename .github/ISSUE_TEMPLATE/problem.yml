@@ -1,0 +1,21 @@
+name: Report a problem
+description: Something did not work or looked wrong.
+labels: [problem]
+body:
+  - type: textarea
+    id: what
+    attributes: { label: What happened, description: What you did, what you expected, what you saw instead. }
+    validations: { required: true }
+  - type: input
+    id: where
+    attributes: { label: Which page or step, placeholder: "e.g. Budget, assigning to an envelope" }
+  - type: input
+    id: version
+    attributes: { label: App version and browser, description: "Settings shows the version at the bottom.", placeholder: "0.4.0, Chrome on Android" }
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I have not included account numbers, balances or anything from my real books.
+          required: true
